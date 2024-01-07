@@ -16,3 +16,13 @@ E' POSSIBILE:
 - Consulatare repository
 - Consultare stackoverflow
 - Consultare documentazioni C/C++
+
+PENALIZZAZIONE PUNTI:
+•	Una mancata gestione dell’errore porta alla decurtazione di punti
+•	Bisogna chiudere il file alla fine del programma altrimenti vi è una decurtazione di punti
+•	durante l’esame se viene allocato qualcosa deve essere deallocato prima di uscire dal programma, pena decurtazione punti
+•	Se un array viene deallocato con delete (senza le parentesi quadre) viene deallocato solo il primo elemento ma non tutti gli altri e gli altri elementi restano nella memoria riservata al programma che non è più accessibile, all’esame una cosa del genere causa una decurtazione di punti
+•	Deallocare e leggere dalla stessa memoria appena deallocata porta a una decurtazione di punti
+•	Quando si termina un programma per un errore usando exit(0) prima i file aperti in uno stream vanno chiusi
+•	Nothrow non necessario
+•	non usare file multipli aggiungendoli come .cc, sempre .h (non enella compilazione) pena decurtazione punti.

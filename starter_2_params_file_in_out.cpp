@@ -22,21 +22,24 @@ using namespace std;
 int main(int argc, char** argv) {
     if (argc != 3) {
         cout << "Usage: " << argv[0] << " <param1> <param2>" << endl; // TODO: change parameter names
-        return 1;
+        exit(1);
     }
 
     ifstream in(argv[1]);
+    ofstream out(argv[2]);
 
     if (!in.is_open()) {
         cout << "Error opening file" << endl;
-        return 1;
+        in.close();
+        out.close();
+        exit(1);
     }
-
-    ofstream out(argv[2]);
 
     if (!out.is_open()) {
         cout << "Error opening file" << endl;
-        return 1;
+        in.close();
+        out.close();
+        exit(1);
     }
 
     /* YOUR CODE HERE */

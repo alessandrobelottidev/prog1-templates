@@ -22,7 +22,7 @@ using namespace std;
 int main(int argc, char** argv) {
     if (argc != 3) {
         cout << "Usage: " << argv[0] << " <param1> <param2>" << endl;  // TODO: change parameter names
-        return 1;
+        exit(1);
     }
 
     string param1 = argv[1]; // TODO: change type and name
@@ -31,7 +31,8 @@ int main(int argc, char** argv) {
 
     if (!in.is_open()) {
         cout << "Error opening file" << endl;
-        return 1;
+        in.close();
+        exit(1);
     }
 
     /* YOUR CODE HERE */
