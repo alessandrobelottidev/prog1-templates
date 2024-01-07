@@ -1,0 +1,18 @@
+PRIMA DELL'ESAME:
+- Portare chiavetta con repository principali
+- Setup keyboard layout US
+
+DURANTE L'ESAME:
+- Leggere attentamente tutto il testo del professore, incluse precisazioni!
+- Usare meno funzioni esterne possibili
+- Testare il proprio programma con input di esempio
+- Testare il proprio programma con valgrind
+
+NON:
+- Usare keyword C++ (esclusi new, delete e poco altro...)
+- Usare intelligenze artificiali
+
+E' POSSIBILE:
+- Consulatare repository
+- Consultare stackoverflow
+- Consultare documentazioni C/C++
